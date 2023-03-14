@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery lesson 1</title>
+    <!-- <script src="./js/jquery-3.6.4.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        #panel,
+        #flip,
+        #panel2,
+        #flip2 {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel,
+        #panel2 {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Popular open projects of OpenAI</h1>
+        <p class="child">OpenAI is an artificial intelligence research laboratory comprised of the for-profit
+            corporation OpenAI LP and its
+            parent company, the non-profit OpenAI Inc.</p>
+        <button id="hide">Toggle between hide() and show()</button>
+    </header>
+    <h2 class="chat">ChatGPT</h2>
+    <button id="center">center</button>
+    <p>
+        ChatGPT is an artificial intelligence chatbot developed by the OpenAI laboratory. It's a large statistical
+        language
+        model, optimized for dialogue and fine-tuned with tutored and reinforcement learning techniques.
+    </p>
+    <h2>How does ChatGPT work?</h2>
+    <p>You ask him a question, and he types the answer. See an example below.</p>
+    <div id="flip">Hello! Who are you? (Click to see answer)</div>
+    <div id="panel">
+        <p>Hello! I am ChatGPT, a language model trained by OpenAI. I am designed to answer a wide range of
+            questions and have
+            conversations with people. How can I assist you today?</p>
+        <button id="read">Mark as read</button>
+    </div>
+    <h2 class="dalle">DALL·E 2</h2>
+    <button id="center2">center and coral</button>
+    <p>DALL·E 2 is an AI system that can create realistic images and art from a description in natural language.</p>
+    <h2>How does DALL·E 2 work?</h2>
+    <p>You enter text as you imagine a picture, in AI it generates an image. See an example below.</p>
+    <button id="stop">Stop sliding</button>
+    <br><br>
+    <div id="flip2">Hurricane over the ocean. (Click to see image)</div>
+    <div id="panel2">
+        <img src="./images/hurricane2.png" alt="" width="300px" height="250px">
+        <br>
+        <button id="read2">Mark as read</button>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
