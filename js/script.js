@@ -33,30 +33,17 @@ $(function () {
   $("#read").click(function () {
     $("#panel").text("Thank you for watching!");
   });
-   $("#read2").click(function () {
-     $("#panel2").text("Thank you for watching!");
-   });
+  $("#read2").click(function () {
+    $("#panel2").text("Thank you for watching!");
+  });
 
-  // $("#flip").click(function () {
-  //   alert("You clicked!");
+  $(document).ready(function () {
+    $("#btn-anim").click(function () {
+      $("#animate").animate({ left: "250px", height: "105px", width: "260px", opacity: "0.5", fontSize: "2.5em" });
+    });
+  });
+
+  // $("#show-menu").click(function () {
+  //   $("menu").slideToggle();
   // });
-
-  //   $("#hide").click(function () {
-  //     $("#myid").hide();
-  //   });
-
-  //   $("#show").click(function () {
-  //     $("#myid").show();
-  //   });
-
-  // $("#myid").hover(
-  //   function () {
-  //     alert("Вы над myid!");
-  //   },
-  //   function () {
-  //     alert("Пока! Вы покидаете myid!");
-  //   }
-  // );
-
-  //   $("#myid").remove();
 });

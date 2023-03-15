@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>jQuery lesson 1</title>
+    <title>jQuery</title>
     <!-- <script src="./js/jquery-3.6.4.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <style>
@@ -24,6 +24,16 @@
             padding: 50px;
             display: none;
         }
+
+        #animate {
+            border: 1px solid #555;
+            border-radius: 3px;
+            color: white;
+            background: #555;
+            height: 105px;
+            width: 260px;
+            position: relative;
+        }
     </style>
 </head>
 
@@ -33,10 +43,18 @@
         <p class="child">OpenAI is an artificial intelligence research laboratory comprised of the for-profit
             corporation OpenAI LP and its
             parent company, the non-profit OpenAI Inc.</p>
-        <button id="hide">Toggle between hide() and show()</button>
+        <button id="hide">Hide and show</button>
+        <!-- <nav>
+            <h2>Menu</h2>
+            <ul id="menu">
+                <li><a href="https://openai.com/blog/chatgpt">ChatGPT</a></li>
+                <li><a href="https://openai.com/product/dall-e-2">DALL·E 2</a></li>
+            </ul>
+            <button id="show-menu">Show</button>
+        </nav> -->
     </header>
     <h2 class="chat">ChatGPT</h2>
-    <button id="center">center</button>
+    <button id="center">Center</button>
     <p>
         ChatGPT is an artificial intelligence chatbot developed by the OpenAI laboratory. It's a large statistical
         language
@@ -52,7 +70,7 @@
         <button id="read">Mark as read</button>
     </div>
     <h2 class="dalle">DALL·E 2</h2>
-    <button id="center2">center and coral</button>
+    <button id="center2">Center and coral</button>
     <p>DALL·E 2 is an AI system that can create realistic images and art from a description in natural language.</p>
     <h2>How does DALL·E 2 work?</h2>
     <p>You enter text as you imagine a picture, in AI it generates an image. See an example below.</p>
@@ -64,6 +82,11 @@
         <br>
         <button id="read2">Mark as read</button>
     </div>
+    <br>
+    <button id="btn-anim">Start Animation</button>
+    <br> <br>
+    <div style="border:1px solid #000;border-radius:3px;color:white;background:#000;height:105px;width:260px;position:relative;"
+        id="animate">Hello, OpenAI!</div>
     <script src="./js/script.js"></script>
 </body>
 
